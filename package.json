@@ -1,6 +1,6 @@
 {
   "name": "vue3-popper",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "author": {
     "name": "Valgeir Björnsson",
     "email": "valgeir@hey.com",
@@ -35,7 +35,7 @@
     "serve:docs": "vitepress serve docs",
     "deploy:docs": "npm run build:docs && npx gh-pages -d docs/.vitepress/dist",
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
-    "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
+    "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs --bundleConfigAsCjs",
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
   },
